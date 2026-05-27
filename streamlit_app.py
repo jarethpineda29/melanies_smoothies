@@ -65,8 +65,8 @@ if ingredients_list:
         time_to_insert = st.button ('Submit Order')
       
     if time_to_insert:
-        session.sql(my_insert_stmt).collect()
-        st.success(f'Your Smoothie is ordered, {name_on_order}!', icon="✅")
+      session.sql(my_insert_stmt).collect()
+      st.success(f'Your Smoothie is ordered, {name_on_order}!', icon="✅")
 
 
 # New section to display smoothiefroot nutrition information
